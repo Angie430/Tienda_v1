@@ -67,7 +67,7 @@
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-                                                        
+                                                        <mainClass>com.tienda.TiendaApplication</mainClass>
 						</exclude>
 					</excludes>
 				</configuration>
