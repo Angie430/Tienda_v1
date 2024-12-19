@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>Categorías con Productos Activos</title>
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+        
+        <!-- Sección principal para filtros -->
+        <section>
+            <h2>Categorías con Productos Activos</h2>
+            <p>Total de categorías: <span th:text="${totalCategorias}"></span></p>
+        </section>
+        
+        <!-- Fragmento que mostrará el listado -->
+        <section th:replace="~{pruebas/fragmentos :: listadoCategorias}" 
+                 th:with="categorias=${categorias}"/>
+
+        <footer th:replace="~{layout/plantilla :: footer}"/>       
+    </body>
+</html>

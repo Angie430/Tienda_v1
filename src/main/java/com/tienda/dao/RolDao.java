@@ -4,11 +4,14 @@
  */
 package com.tienda.dao;
 
-import com.tienda.domain.Categoria;
-import java.util.List;
+
+import com.tienda.domain.Rol;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CategoriaDao extends JpaRepository <Categoria,Long> {
+/**
+ *
+ * @author solor
+ */
+public interface RolDao extends JpaRepository<Rol, Long>{
     
-  List<Categoria> findByActivoTrue();
 }
